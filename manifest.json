@@ -1,0 +1,26 @@
+{	
+	"manifest_version": 2,
+	"name": "NoteBook(NB)",
+	"version": "1.1",
+	"description": "You can write note every time~",
+	"browser_action": {
+		"default_icon": "default/icon_48.png",
+		"default_popup": "default/default.html"
+	},
+	"content_scripts":[{
+		"matches": ["http://*/*","https://*/"],
+		"js": ["app/jquery.js","app/server.js","app/translate.js"],
+		"css": ["app/content.css"],
+		"run_at": "document_end"
+	}],
+	"permissions":[
+		"tabs"
+	],
+	"icons":{
+		"16":"default/icon_16.png",
+		"48":"default/icon_48.png"
+	},
+	"web_accessible_resources": [
+		"*","https://"
+	]
+}

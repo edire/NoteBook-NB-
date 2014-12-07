@@ -1,0 +1,155 @@
+.nb-iframe {
+	border: 0;
+	height: 100%;
+	width: 100%;
+ }
+.nb-box {
+	background: rgba(0, 0, 0, 0.8);
+	border: 0;
+	border-radius: 14px;
+	height: 440px;
+	overflow: inherit;
+	position: fixed;
+	right: 40px;
+	top: 40px;
+	top: 84px;
+	width: 400px;
+	z-index: 99999999999;
+ }
+.nb-close {
+	background: rgba(163, 0, 0, 0.6);
+	color: #FFF;
+	cursor: pointer;
+	display: block;
+	font-weight: bolder;
+	position: absolute;
+	z-index: 999999999;
+	width: 15px;
+	height: 15px;
+	font-size: 8px;
+	line-height: 16px;
+	text-align: center;
+	border-radius: 50%;
+	top: 2px;
+	right: 11px;
+ }
+.nb-title {
+	background: rgba(16, 16, 16, 0.560784);
+	color: #fff;
+	cursor: move;
+	font-size: 10px;
+	height: 20px;
+	line-height: 20px;
+	padding-left: 22px;
+	position: absolute;
+	z-index: 999999;
+	text-align: left;
+	width: 95%;
+	border-radius: 20px 20px 0 0;
+ }
+.nb-debug-frame {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 21px;
+	width: 100%;
+	z-index: 99999;
+ }
+.nb-debug-body {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 50000;
+ }
+.nb-resize-left {
+	height: 10px;
+	width: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	cursor: sw-resize;
+	z-index: 9999999999;
+ }
+.nb-resize-right {
+	height: 10px;
+	width: 10px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	cursor: nw-resize;
+	z-index: 9999999999;
+ }
+ .frame-box{
+ 	position: absolute;
+	top: 20px;
+	left: 10px;
+	right: 10px;
+	bottom: 60px;
+ }
+ .translate-box {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	right: 10px;
+	height: 45px;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+ }
+ .translate-input {
+ 	width: 91%;
+	height: 35px;
+	margin-top: 5px;
+	background: none;
+	border: none;
+	vertical-align: middle;
+	outline: none;
+	color: #FFF;
+	font-size: 18px;
+	margin-left: 15px;
+ }
+ .translate-btn {
+ 	display: block;
+	position: absolute;
+	width: 52px;
+	height: 30px;
+	background: #B1E5D9;
+	right: 12px;
+	bottom: 8px;
+	line-height: 30px;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+ }
+ .translate-dialog {
+ 	position: absolute;
+ 	left: 0;
+	right: 0;
+	border-radius: 20px;
+	bottom: -130px;
+	height: 100px;
+	background: rgba(0,0,0,0.8);
+	color: #fff;
+	padding: 10px;
+	text-align: left;
+ }
+
+.translate-flag-dot {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	background: #ccc;
+	right: 19px;
+	top: 17px;
+	cursor: pointer;
+}
+.translate-flag-dot.on{
+	background: #17B2B8;
+}
