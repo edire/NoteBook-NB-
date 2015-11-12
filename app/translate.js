@@ -3,14 +3,14 @@ function getTranslate(key){
 	var flag = $('.translate-flag-dot').className.indexOf('on') > -1 ? false : true;
 	if(flag) {
 
-	var url = "https://openapi.baidu.com/public/2.0/bmt/translate?client_id=bGpu4r0ICxzOgLgjWTstC12r&q=" + key +"&from=auto&to=auto";
-	var mean;
-	$$.getJSON(url,function(data){
-		if(!data) return;
-		mean = !data.error_code ?　data.trans_result[0].dst : 'no word';
-		$('.translate-dialog').innerHTML = mean;
-	})
-}else{
+		var url = "https://openapi.baidu.com/public/2.0/bmt/translate?client_id=bGpu4r0ICxzOgLgjWTstC12r&q=" + key +"&from=auto&to=auto";
+		var mean;
+		$$.getJSON(url,function(data){
+			if(!data) return;
+			mean = !data.error_code ?　data.trans_result[0].dst : 'no word';
+			$('.translate-dialog').innerHTML = mean;
+		})
+	}else{
 		var url,
 			from,
 			to,

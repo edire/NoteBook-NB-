@@ -3,7 +3,7 @@ $ = function(e) {
 }
 $$ = jQuery;
 window.onkeydown=function(e){
-	if(e.which == 115){
+	if(e.which == 115 || (e.which == 66 && e.ctrlKey)){
 		 if($('.nb-box')){
 		 	$('.nb-box').remove();
 		 }else{
